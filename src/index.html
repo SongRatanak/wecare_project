@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Room For Rent</title>
 
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -14,6 +13,8 @@
     <link rel="stylesheet" href="./Css/index.css">
     <!--FontAwsome-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
 
     <!--<link rel="stylesheets" href="../Css/all.min.css">
@@ -24,10 +25,15 @@
 
 </head>
 <body>
-    <!--Nav Bar Start Here-->
+
+    <!--Header Section Start-->
+    <hearder>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
         <div class="container-fluid">
-            <img alt="Logo" src="../Asset/image/Wecare02-01.png" class="img-fluid" width="80" height="80">
+            <div class="logo-detail">
+                <i class="fab fa-slack"></i>
+                <span class="logo_name">WeCare</span>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,9 +70,11 @@
             </div>
         </div>
     </nav>
-        <!-- Navbar End-->
+    </hearder>
+    <!--Header Section End-->
+
         <!--Slider Start-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -195,62 +203,15 @@
                 <h2 class="inner-line">Our Special Rooms</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
-                    <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
-                        <div class="icon">
-                            <p><i class="material-icons">bed</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">shower</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
-                        </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
-                    </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
-                    <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
-                        <div class="icon">
-                            <p><i class="material-icons">bed</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">shower</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
-                        </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
-                    </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
-                        </div>
-                    </div>
 
-
-                </div>
-            </div>
-            <div class="col-3">
+        <div class="row card-row">
+            <div class="col-lg-3 md-3 sm-3">
                 <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
                         <div class="icon">
                             <p><i class="material-icons">bed</i>1</p>
                         </div>
@@ -260,21 +221,26 @@
                         <div class="icon">
                             <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
                         </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
                     </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
+                        <div class="button">
+                            <div class="row">
+                                <div class="col-sm-6 btn-click">
+                                    <a href="#" class="button1">See More</a>
+                                </div>
+                                <div class="col-sm-6 btn-click">
+                                    <a href="#" class="button2">Booking now</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 md-3 sm-3">
                 <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
                         <div class="icon">
                             <p><i class="material-icons">bed</i>1</p>
                         </div>
@@ -284,21 +250,26 @@
                         <div class="icon">
                             <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
                         </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
                     </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 md-3 sm-3">
                 <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
                         <div class="icon">
                             <p><i class="material-icons">bed</i>1</p>
                         </div>
@@ -308,23 +279,26 @@
                         <div class="icon">
                             <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
                         </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
                     </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 md-3 sm-3">
                 <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
                         <div class="icon">
                             <p><i class="material-icons">bed</i>1</p>
                         </div>
@@ -334,87 +308,200 @@
                         <div class="icon">
                             <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
                         </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
                     </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3"><div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
-                    <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
-                        <div class="icon">
-                            <p><i class="material-icons">bed</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">shower</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
-                        </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
-                    </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img alt="Room 1" src="https://i.picsum.photos/id/65/200/200.jpg?hmac=pZrTO_F80X2VYUVpgorpj6xM_WABGhjIXYieK__8B50"/>
-                    <div class="card-body">
-                        <h5>Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
-                        <div class="icon">
-                            <p><i class="material-icons">bed</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">shower</i>1</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
-                        </div>
-                        <p>Apartment, Duplexes, Serviced Apartment</p>
-                    </div>
-                    <div class="button-click-all">
-                        <div class="button-click">
-                            <button type="button" class="btn btn-outline-success btn-lg">See More</button>
-                            <button type="button" class="btn btn-success btn-lg">Booking Now</button>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row card-row">
+            <div class="col-lg-3 md-3 sm-3">
+                <div class="card">
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
+                        <div class="icon">
+                            <p><i class="material-icons">bed</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">shower</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 md-3 sm-3">
+                <div class="card">
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
+                        <div class="icon">
+                            <p><i class="material-icons">bed</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">shower</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 md-3 sm-3">
+                <div class="card">
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
+                        <div class="icon">
+                            <p><i class="material-icons">bed</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">shower</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 md-3 sm-3">
+                <div class="card">
+                    <img src="../Asset/image/room1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="class-title">Spacious 2 Bedroom Near Riverside | Phnom Penh</h5>
+                        <hr>
+                        <p class="cart-text">Apartment, Duplexes, Serviced Apartment</p>
+                        <div class="icon">
+                            <p><i class="material-icons">bed</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">shower</i>1</p>
+                        </div>
+                        <div class="icon">
+                            <p><i class="material-icons">square_foot</i>150<span>m2</span></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="row">
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button1">See More</a>
+                            </div>
+                            <div class="col-sm-6 btn-click">
+                                <a href="#" class="button2">Booking now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
-    <div class="container-ban">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="title-ban">
-                    <h1>Explore Your Buy Your Need</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut delectus ea eos est ex facere
-                        fugit iste laborum maxime, modi molestias nesciunt quo reprehenderit sapiente veniam vero, voluptate.</p>
-                    <button id="find" class="btn btn-outline-secondary" type="submit">Find Now</button>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="image-cta">
-                    <img alt="cta-image" src="../image/image-cta-02.png" width="420" height="auto">
-                </div>
-            </div>
-        </div>
-    </div>
     <!--footer start-->
     <img class="footer-image" alt="footer" src="../Asset/image/footer-01.png">
 
     <!-- Footer -->
+    <footer>
+        <div class="col-lg-12 content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">wecare</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class=" link-boxes">
+                <ul class="box">
+                    <li class="link_name">Home</li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Get started</a></li>
+                </ul>
+                <ul class="input-box">
+                    <li class="link-message">Message</li>
+                    <input class="place-holder" type="text" placeholder="Enter your email">
+                    <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
+                    <li><input type="button" value="Sent Now"></li>
+                </ul>
+              <div class="top">
+                  <div class="map">
+                      <h4>Mapping</h4>
+                      <div class="col-lg-12 d-flex align-items-stretch">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5527.815363928887!2d104.89041790731874!3d11.569366868596436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519fe4077d69%3A0x20138e822e434660!2z4Z6f4Z624Z6b4Z6K4Z-G4Z6U4Z684Z6b4Z6R4Z684Z6AIOGen-GetuGegOGem-GenOGet-GekeGfkuGemeGetuGem-GfkOGemeGel-GevOGemOGet-Gek-GfkuGekeGel-GfkuGek-GfhuGeluGfgeGeiQ!5e0!3m2!1sen!2skh!4v1641886624645!5m2!1sen!2skh" width="600" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2021 <a href="#">wecare</a>All rights reserved</span>
+                <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript Section-->
+    <script src="JavaScript/navbar.js">
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
